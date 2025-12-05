@@ -40,6 +40,6 @@ nav a {
 }
 
 nav a:hover {
-  background-color: brown;
+  background-color: rgb(190, 167, 142);
   color: white;
 }

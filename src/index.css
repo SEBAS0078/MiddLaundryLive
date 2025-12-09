@@ -5,7 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -24,10 +23,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(to bottom, #0d395f, rgb(0, 0, 0));
 }
 
 h1 {
@@ -57,7 +55,6 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
   }
   a:hover {
     color: #747bff;
@@ -65,4 +62,114 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+details {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+  background: rgb(115, 115, 115);
+  color: black;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Layout */
+.laundry-container {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Titles */
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.building-title {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Dropdown */
+.selector-group {
+  margin-top: 15px;
+}
+
+.label {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.building-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #0073ff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.building-select:focus {
+  outline: 2px solid #6f8afe;
+}
+
+/* Status Indicator */
+.status-wrapper {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* The glowing dot */
+.status-indicator {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  display: inline-block;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+.status-on {
+  background: #3aff7a;
+  box-shadow: 0 0 10px #3aff7a;
+}
+
+.status-off {
+  background: #ff3b3b;
+  box-shadow: 0 0 10px #ff3b3b;
+}
+
+.status-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Refresh Note */
+.refresh-note {
+  opacity: 0.6;
+  margin-top: 30px;
 }

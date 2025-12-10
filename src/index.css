@@ -107,7 +107,7 @@ li {
 .building-title {
   margin-top: 20px;
   font-size: 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 /* Dropdown */
@@ -135,23 +135,23 @@ li {
 
 /* Status Indicator */
 .status-wrapper {
-  margin-top: 0px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
   gap: 10px;
+  line-height: 1;          /* ensures baseline doesn’t shift */
+  margin-bottom: 15px
 }
 
 /* The glowing dot */
 .status-indicator {
   width: 14px;
   height: 14px;
-  border-radius: 100%;
-  display: inline-block;
-  transition:
-    background 0.3s,
-    box-shadow 0.3s;
+  border-radius: 50%;
+  transition: background 0.3s, box-shadow 0.3s;
+  display: inline-block;  /* fine inside flex */
 }
+
 
 .status-on {
   background: #3aff7a;
@@ -163,9 +163,16 @@ li {
   box-shadow: 0 0 10px #ff3b3b;
 }
 
+.status-NA {
+  background: #7c7c7c;
+}
+
+
 .status-text {
   font-size: 1.2rem;
   font-weight: 500;
+  margin: 0;          /* remove default top/bottom margin */
+  line-height: 1;     /* ensures vertical centering inside flex */
 }
 
 /* Refresh Note */

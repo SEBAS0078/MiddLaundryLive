@@ -4,11 +4,11 @@ export default function Navbar() {
   return (
     <nav>
       <div>
-        {/* <img we will create a lot then I will uncomment this
-          src="/MiddBinLogo.jpeg"
+        <img
+          src="src\assets\MiddLaundryLive Logo.png"
           alt="MiddBin Logo"
-          style={{ width: "120px", height: "120px" }}
-        /> */}
+          className="logo"
+        />
       </div>
       <ul>
         <li>

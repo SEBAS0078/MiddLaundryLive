@@ -180,3 +180,60 @@ li {
   opacity: 0.6;
   margin-top: 30px;
 }
+
+/* --- About Page Layout --- */
+.about-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-title {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* --- Developer Grid --- */
+.dev-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* --- Developer Card --- */
+.dev-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 12px;
+  width: 150px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.dev-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.dev-name {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}

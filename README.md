@@ -1,16 +1,20 @@
-# React + Vite
+# MiddLaundryLive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MiddLaundryLive is a lightweight React web app that displays real-time laundry machine status using MQTT. It connects to ESP32 boards publishing to HiveMQ, listens for washer state updates, and presents them in a simple UI with navigation and client-side routing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Live MQTT Integration**  
+  Connects to a public HiveMQ WebSocket broker and subscribes to machine topics.
+- **Real-time Washer Status**  
+  Parses incoming JSON payloads and updates the UI instantly.
+- **Client-Side Routing**  
+  Home and About pages built using React Router v6.
+- **Clean Navigation Bar**  
+  Simple navbar for navigating between pages.
+- **Netlify Deployment Ready**  
+  Supports single-page routing through a `_redirects` file.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---

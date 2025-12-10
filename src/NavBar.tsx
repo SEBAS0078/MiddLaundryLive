@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav>
       <div>
         <img
-          src="src\assets\MiddLaundryLive Logo.png"
+          src=".\assets\MiddLaundryLive Logo.png"
           alt="MiddBin Logo"
           className="logo"
         />

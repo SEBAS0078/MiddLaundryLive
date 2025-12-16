@@ -29,7 +29,7 @@ Our ES consists of three main components:
 Attaches to the ESP32 to measure vibration and motion.
 
 
-##### 3. Optional: Lithium Battery Pack & Magnets
+##### 3.  Lithium Battery Pack & Magnets
 Powers the above 2 components and connects magnetically for portable use in laundry rooms.
 
 ###### see reference image 1.1
@@ -68,7 +68,7 @@ Our simple website subscribes to these topics and updates the UI accordingly.
 
 #### Sensor Data Processing and Logic
 
-The core challenge in vibration detection is distinguishing normal idle vibrations (background noise, minor building vibrations, people walking near the machines) from machine-active vibrations. To accomplish this, we designed a two-stage algorithm that transitions across three system states:
+The core challenge in vibration detection is distinguishing normal idle vibrations (background noise, minor building vibrations, people walking near the machines) from machine-active vibrations. To accomplish this, we designed a two-stage algorithm Calibration, then Detection, it also includes another detection algorithm(Polling) for future work and testing. 
 
 ##### 1. Calibration State
 

@@ -3,6 +3,8 @@
 ### CSCI 435 MiddLaundry Live
 #### December 10,2025
 
+[Deployed Website]([https://example.com](https://middlaundrylive.netlify.app))
+
 This is the final write-up and all information related to our embedded system and code
 
 ### Introduction

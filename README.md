@@ -5,7 +5,7 @@
 
 [Deployed Website](https://middlaundrylive.netlify.app)
 
-This was a class project and proof of concept, so our sensors are currenlty not being used, hence the website will show "No Data" for all the machines. 
+This was a class project and proof of concept, and our sensors are currenlty not being used, hence the website will show "No Data" for all the machines. 
 
 This is the final write-up and all information related to our embedded system and code
 
